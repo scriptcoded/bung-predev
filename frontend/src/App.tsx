@@ -23,7 +23,7 @@ type Card = {
 }
 
 function App() {
-  const [cards, setCards] = useState([
+  const [_cards, _setCards] = useState([
     { id: '1' },
     { id: '2' },
     { id: '3' },
@@ -34,7 +34,7 @@ function App() {
     { id: '8' }
   ])
 
-  const [player1Cards, setPlayer1Cards] = useState(['1', '2', '3'])
+  const [player1Cards, _setPlayer1Cards] = useState(['1', '2', '3'])
 
   const [pickedCard, setPickedCard] = useState<string | null>(null)
 
@@ -49,14 +49,14 @@ function App() {
     })
   }
 
-  const doTheMove = () => {
-    if (pickedCard) {
-      sounds.cardDown.play()
-      setFlip(false)
-    } else {
-      sounds.cardUp.play()
-    }
-  }
+  // const doTheMove = () => {
+  //   if (pickedCard) {
+  //     sounds.cardDown.play()
+  //     setFlip(false)
+  //   } else {
+  //     sounds.cardUp.play()
+  //   }
+  // }
 
   const doTheFlip = () => {
     setFlip(true)

@@ -1,5 +1,3 @@
-import React from 'react'
-
 import cardImage from '../assets/cards/lvl1/queen_of_diamonds.png'
 import backImage from '../assets/cards/lvl1/back.png'
 import { MotionProps, motion } from "framer-motion"
